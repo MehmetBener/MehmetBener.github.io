@@ -134,6 +134,19 @@
         <div>Here's the UI design for my Swift-based X-O-X UI:</div>
         <img src="/assets/XOX_UI.png" alt="X-O-X Swift UI Design">
       </div>
+      <div>
+        <strong>Calculator using Swift</strong>
+        <div style="height:8px;"></div>
+        <a href="https://github.com/MehmetBener/AP-CS-Principles-Projects/tree/main/Swift_Calculator" target="_blank" rel="noopener noreferrer">Github Source Code</a>
+        <div style="height:8px;"></div>
+        <div>Here's a short demo video of the calculator:</div>
+        <div class="video-container">
+          <video controls>
+            <source src="/assets/calculator.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
     </div>
 
     <div id="big-ideas" class="page" data-title="Big Ideas — Mehmet Bener">
@@ -218,6 +231,46 @@
         <div>Store X/O per cell.</div>
         <div>Implement placing moves.</div>
         <div>Write a function to check winning and losing and a button to reset the board.</div>
+        <div style="height:28px;"></div>        
+  
+        <div style="font-weight:700;">SwiftUI Calculator App</div>
+        <div style="height:8px;"></div>
+        <a href="https://github.com/MehmetBener/AP-CS-Principles-Projects/tree/main/SwiftUI_Calculator" target="_blank" rel="noopener noreferrer">Github Source Code</a>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">Overview</div>
+        <div style="height:8px;"></div>
+        <div>This project is a simple SwiftUI-based calculator that takes two number inputs and performs four basic operations: addition, subtraction, multiplication, and division. It displays all results instantly.</div>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">Key Idea</div>
+        <div>The app converts the two input strings into Double values, performs calculations, and displays the results in real time inside styled text fields and labels.</div>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">How It Works</div>
+        <div>The app uses <code>@State</code> properties to store the two user inputs.</div>
+        <div>The strings are converted into double type variables.</div>
+        <div>It calculates addition, subtraction, multiplication, and division results immediately.</div>
+        <div>A ZStack and VStack are used to organize the UI with a clean look.</div>
+        <div>Division by zero is safely handled by displaying “—” instead of an error.</div>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">Issues I Faced</div>
+        <div>I had trouble with a "Partial Double" type when i tried to perform calculations on my variables already converted to Double's.</div>
+        <div>I researched the issue and found a solution where "?? 0" is used while converting the String type to a Double.</div>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">Limitations Right Now</div>
+        <div>No dedicated "Calculate" button; results update instantly but lack manual control.</div>
+        <div>No ability to perform chained operations or store previous results.</div>
+        <div>No history or memory functionality.</div>
+        <div style="height:8px;"></div>
+
+        <div style="font-weight:700;">Next Steps</div>
+        <div>Add a "Calculate" button for better control.</div>
+        <div>Improve input validation to prevent invalid entries.</div>
+        <div>Add a clear/reset button to reset fields.</div>
+        </div>  
     </div>      
   </main>
 
