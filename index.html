@@ -98,6 +98,7 @@
       <a href="#home" id="nav-home">Home</a>
       <a href="#projects" id="nav-projects">Projects</a>
       <a href="#big-ideas" id="nav-big-ideas">Big Ideas</a>
+      <a href="#swiftui-100days" id="nav-swiftui">SwiftUI 100 Days</a>
       <a href="#documentation" id="nav-documentation">Documentation</a>
     </nav>
   </header>
@@ -233,6 +234,75 @@
         </details>
       </section>
     </div>
+    </div>
+
+    <div id="swiftui-100days" class="page" data-title="100 Days of SwiftUI — Days 1, 2, 5, 6 — Mehmet Bener">
+      <h2>100 Days of SwiftUI — Days 1, 2, 5, 6</h2>
+      <div class="muted">Super-condensed notes + one mini example per day.</div>
+    
+      <!-- Day 1 -->
+      <section style="margin-top:12px;">
+        <h3 style="margin:0 0 6px;">Day 1 — Variables, Constants, Strings, Numbers</h3>
+        <ul>
+          <li><strong>Focus:</strong> <code>var</code> vs <code>let</code>, strings, integers, doubles.</li>
+          <li><strong>Tip:</strong> Prefer <code>let</code> until you need mutation.</li>
+          <li><strong>Example:</strong></li>
+        </ul>
+        <pre><code>// Day 1
+    let name = "Mehmet"
+    var score = 0
+    score += 10
+    let summary = "Hi \(name)! Score: \(score)"</code></pre>
+      </section>
+    
+      <!-- Day 2 -->
+      <section style="margin-top:12px;">
+        <h3 style="margin:0 0 6px;">Day 2 — Booleans & String Interpolation (Checkpoint 1)</h3>
+        <ul>
+          <li><strong>Focus:</strong> <code>Bool</code>, comparisons, interpolation.</li>
+          <li><strong>Tip:</strong> Keep conditions readable; avoid nesting when possible.</li>
+          <li><strong>Example:</strong></li>
+        </ul>
+        <pre><code>// Day 2
+    let passed = score &gt;= 10
+    let status = passed ? "✅ Passed" : "❌ Try again"
+    print("Result: \(status)")</code></pre>
+      </section>
+    
+      <!-- Day 5 -->
+      <section style="margin-top:12px;">
+        <h3 style="margin:0 0 6px;">Day 5 — If, Switch, Ternary</h3>
+        <ul>
+          <li><strong>Focus:</strong> Branching with <code>if</code>, <code>switch</code>, and <code>?:</code>.</li>
+          <li><strong>Tip:</strong> Use <code>switch</code> for discrete cases; keep <code>if</code> for ranges/booleans.</li>
+          <li><strong>Example:</strong></li>
+        </ul>
+        <pre><code>// Day 5
+    let grade = 88
+    let band: String
+    switch grade {
+    case 90...100: band = "A"
+    case 80..<90:  band = "B"
+    default:       band = "C or below"
+    }</code></pre>
+      </section>
+    
+      <!-- Day 6 -->
+      <section style="margin-top:12px;">
+        <h3 style="margin:0 0 6px;">Day 6 — Loops (for/while), break & continue (Checkpoint 3)</h3>
+        <ul>
+          <li><strong>Focus:</strong> Repetition patterns; exiting/skipping work safely.</li>
+          <li><strong>Tip:</strong> Prefer <code>for</code> over <code>while</code> unless conditions evolve inside.</li>
+          <li><strong>Example:</strong></li>
+        </ul>
+        <pre><code>// Day 6
+    var total = 0
+    for n in 1...10 {
+      if n == 5 { continue }   // skip 5
+      total += n
+    }
+    print(total) // 1+2+3+4+6+7+8+9+10</code></pre>
+      </section>
     </div>
 
     <div id="documentation" class="page" data-title="Documentation — Mehmet Bener">
